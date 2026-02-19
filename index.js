@@ -1,16 +1,23 @@
 import { adatLista } from "./adat.js";
-import { eredmenySzamolas } from "./fuggvenyek.js";
+import { eredmenySzamolas, listaKiir, objektKiir } from "./fuggvenyek.js";
+import { velSzamok } from "./fuggvenyek.js";
 
-let ertekelesElem = document.getElementById("ertekeles");
-let inputElem = document.getElementById("number");
+let inputElem = document.getElementById("ertekeles");
 let eredmenyElem = document.getElementById("eredmeny");
-let gombElem = document.getElementById("eredmeny");
+let gombElem = document.getElementById("gomb");
 let szamokElem = document.getElementById("szamok");
 let tablazatElem = document.getElementById("tablazat");
 
-gombElem.addEventListener("click", valami);
+gombElem.addEventListener("click", function () {
+  console.log("valami");
+  eredmenySzamolas(inputElem, eredmenyElem);
+});
 
-function valami() {
-    eredmenySzamolas(inputElem)
-    
-}
+/* function kiir() {
+  console.log("valami");
+  eredmenySzamolas(inputElem, eredmenyElem);
+  velSzamok();
+} */
+let velSzamokLista = velSzamok(12, -10, 100);
+listaKiir(velSzamokLista, szamokElem);
+objektKiir(adatLista,tablazatElem);

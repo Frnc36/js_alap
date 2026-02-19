@@ -1,0 +1,26 @@
+aside{
+  display: flex;
+  gap: 5px;
+  flex-wrap: wrap;
+}
+
+.kor{
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  width: 40px;
+  height: 40px;
+  border-radius: 50%;
+  background: #000000;
+  color: white;
+  font-weight: bold;
+  margin-top: 3px;
+  margin-bottom: 3px;
+}
+
+table,tr,th,td{
+  border: 1px solid black;
+  border-collapse: collapse;
+  padding: 25px;
+  text-align: center;
+}
